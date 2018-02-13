@@ -1,8 +1,8 @@
+
 var button = document.getElementById('changeBackground');
 
-button.addEventListener('click', () => {
-    document.body.style.backgroundColor = 'fuchsia';
-});
+//button.addEventListener('click')
+    //document.body.style.backgroundColor = 'fuchsia';
 
 function Person(birthdate) {
     this.firstName = firstName;
@@ -39,3 +39,7 @@ function Person(birthdate) {
 }
 
 var myPerson = new Person( "11/15/2001");
+
+var button1 = document.getElementById('button1')
+var button2 = document.getElementById('button2')
+
