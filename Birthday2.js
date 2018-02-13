@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+var button1 = document.getElementById('button1')
+var button2 = document.getElementById('button2')
+
+button1.addEventListener('click',()=>{
+document.getElementById("submit1").textContent = checkFormat();
+ })
+
+
+
+=======
 function Person(birthdate) {
     this.getSign = function () {
         var sign = new Date(birthdate);
@@ -31,6 +42,7 @@ function Person(birthdate) {
 
 var button1 = document.getElementById('button1');
 var button2 = document.getElementById('button2');
+>>>>>>> origin/master
 
  var button3 = document.getElementById('button3')
         //days till birthday
