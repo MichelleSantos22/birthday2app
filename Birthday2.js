@@ -1,6 +1,9 @@
 var button1 = document.getElementById('button1')
 var button2 = document.getElementById('button2')
 
+button1.addEventListener('click',()=>{
+document.getElementById("submit1").textContent = checkFormat();
+ })
 
 
 
