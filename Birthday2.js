@@ -1,13 +1,4 @@
-
-var button = document.getElementById('changeBackground');
-
-//button.addEventListener('click')
-    //document.body.style.backgroundColor = 'fuchsia';
-
 function Person(birthdate) {
-    this.firstName = firstName;
-    this.lastName = firstName;
-    this.birthdate = new Date(birthdate);
     this.getSign = function () {
         var sign = new Date(birthdate);
         if ((sign.getMonth() === 0 && sign.getDate() > 19) || (sign.getMonth() === 1 && sign.getDate() < 19)) {
@@ -38,8 +29,5 @@ function Person(birthdate) {
     }
 }
 
-var myPerson = new Person( "11/15/2001");
-
-var button1 = document.getElementById('button1')
-var button2 = document.getElementById('button2')
-
+var button1 = document.getElementById('button1');
+var button2 = document.getElementById('button2');
