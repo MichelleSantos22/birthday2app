@@ -1,8 +1,5 @@
+//user story 2
 var button1 = document.getElementById('button1')
-
-
-
-
 function Person(birthdate) {
     this.getSign = function () {
         var sign = new Date(birthdate);
@@ -33,13 +30,3 @@ function Person(birthdate) {
         }
     }
 }
-
-
-
-
-        //days till birthday
-
-        var today = new Date("2/13/18");
-        var birthday = new Date("2/15/18");
-        var days = Math.floor((birthday.getTime() - today.getTime()) / 86400000);
-        document.write("Days until birthday: ", days, "</br>");
