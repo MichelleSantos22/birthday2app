@@ -1,8 +1,7 @@
-//user story 2
-var button1 = document.getElementById('button1')
-function Person(birthdate) {
-    this.getSign = function () {
-        var sign = new Date(birthdate);
+var button1 = document.getElementById('enterYourBirthdate');
+
+function getSign(date) {
+        var sign = new Date(date);
         if ((sign.getMonth() === 0 && sign.getDate() > 19) || (sign.getMonth() === 1 && sign.getDate() < 19)) {
             return "Aquarius";
         } else if ((sign.getMonth() === 1 && sign.getDate() > 18) || (sign.getMonth() === 2 && sign.getDate() < 21)) {
@@ -29,4 +28,12 @@ function Person(birthdate) {
             return "Capricorn";
         }
     }
+
+
+function displaySign() {
+    var input = document.getElementById('inputBirthdate').value;
+    var result = getSign(input);
+    document.getElementById('submit1').textContent = "Your sign is " + result + ".";
 }
+
+button1.addEventListener('click', displaySign);
