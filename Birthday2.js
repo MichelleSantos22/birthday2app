@@ -3,9 +3,8 @@ var button1 = document.getElementById('button1')
 
 
 
-function Person(birthdate) {
-    this.getSign = function () {
-        var sign = new Date(birthdate);
+function getSign(date) {
+        var sign = new Date(date);
         if ((sign.getMonth() === 0 && sign.getDate() > 19) || (sign.getMonth() === 1 && sign.getDate() < 19)) {
             return "Aquarius";
         } else if ((sign.getMonth() === 1 && sign.getDate() > 18) || (sign.getMonth() === 2 && sign.getDate() < 21)) {
@@ -32,7 +31,6 @@ function Person(birthdate) {
             return "Capricorn";
         }
     }
-}
 
 
 
