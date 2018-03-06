@@ -11,17 +11,6 @@ function getage() {
     return "Your age is " + age
 }
 
-//function getDayUntilBirthday() {
-    //var today = new Date(),
-        //nextyear = today.getYear + 1,
-        //birthdate = new Date(birthday),
-       // birthday = document.getElementById(textbox).value,
-       // nextmiracle= new Date(birthdate.setFullyYear(today.getFullYear()))
-    //if (today - nextmiracle > 0){
-   //     var nextBday = nextmiracle.getFullYear(today.getFullYear())
-  //  }
-    // return "There are" + getDayUntilBirthday
-//
 function checkFormat(){
     var format = document.getElementById('inputBirthdate').value;
     var test1 = format.substring(2,3);
@@ -31,5 +20,4 @@ function checkFormat(){
     } else{
        return "invalid input!!!!PLease use this format mm/dd/yyyy"
     }
-
 }
