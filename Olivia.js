@@ -1,16 +1,23 @@
-var button = document.getElementById("button ")
+var button = document.getElementById("11/07/1999")
+
 
 function getDayUntilBirthday(input) {
     var today = new Date();
-    nextyear = today.getYear + 1,
-        birthdate = new Date(birthday);
-    Birthday.setFullYear(today.getFullYear());
-    if (today.getTime() > Birthday.getTime());
-    Birthday.setFullYear(today.getFullYear());
+      var nextyear = today.getYear + 1;
+     var birthdate = new Date(birthday);
+    var birthday = document.getElementById("birthdayinput").value;
+    var nextBirthday = new Date(birthdate.setFullYear(today.getFullYear()));
+
+    if (today - nextbirthday > 0) {
+        var nextbirthday = nextbirthday.setFullYear(today.getFullYear() + 1)
+    }
+    var dayuntilnextbirthday = Math.ceil((nextbirthday - today) / (24 * 60 * 60 * 1000))
+    return dayuntilnextbirthday
 }
 
-var diff = birthdate.getTune() - today.getTime();
-var days = Math.floor(diff / (1000 * 60 * 60 * 24) + 1);
 
-return (days);
-}
+
+
+
+
+
