@@ -1,5 +1,4 @@
 var button1 = document.getElementById('enterYourBirthdate');
-
 function getSign(date) {
         var sign = new Date(date);
         if ((sign.getMonth() === 0 && sign.getDate() > 19) || (sign.getMonth() === 1 && sign.getDate() < 19)) {
@@ -28,12 +27,9 @@ function getSign(date) {
             return "Capricorn";
         }
     }
-
-
 function displaySign() {
     var input = document.getElementById('inputBirthdate').value;
     var result = getSign(input);
     document.getElementById('submit1').textContent = "Your sign is " + result + ".";
 }
-
 button1.addEventListener('click', displaySign);
